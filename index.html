@@ -10,112 +10,100 @@
 </head>
 <body class="bg-gray-100">
 
-  <nav class="fixed top-0 z-50 p-4 w-full bg-gray-800">
-    <div class="flex justify-between items-center mx-auto max-w-7xl">
+  <nav class="bg-gray-800 p-4 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
       <div>
-        <a href="#" class="text-lg font-bold text-white">Imat<span class="text-cyan-600">Abu Kamal</span></a>
+        <a href="#" class="text-white text-lg font-bold">Logo</a>
       </div>
-      <div class="hidden space-x-4 md:flex">
-        <a href="#" class="text-white">Home</a>
+      <div class="md:flex hidden space-x-4">
+        <a href="#home" class="text-white">Home</a>
         <a href="#about" class="text-white">About</a>
         <a href="#services" class="text-white">Services</a>
         <a href="#contact" class="text-white">Contact</a>
       </div>
       <div class="md:hidden">
         <button id="menu-toggle" class="text-white focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="flex fixed top-0 right-0 flex-col pt-8 mt-16 space-y-4 w-64 bg-gray-600 transform translate-x-full md:hidden menu-hidden">
-      <a href="#" class="p-4 text-white">Home</a>
-      <a href="#about" class="p-4 text-white">About</a>
-      <a href="#services" class="p-4 text-white">Services</a>
-      <a href="#contact" class="p-4 text-white">Contact</a>
+    <div id="mobile-menu" class="fixed top-0 right-0 mt-16 bg-gray-800 w-64 transform translate-x-full md:hidden menu-hidden flex flex-col space-y-4 pt-8">
+      <a href="#home" class="text-white p-8">Home</a>
+      <a href="#about" class="text-white p-8">About</a>
+      <a href="#services" class="text-white p-8">Services</a>
+      <a href="#contact" class="text-white p-8">Contact</a>
     </div>
   </nav>
 
-  <section id="home" class="px-4 pt-20 bg-white">
-    <div class="grid grid-cols-1 gap-4 mx-auto max-w-7xl lg:grid-cols-2">
+  <section id="home" class="px-6 pt-20 bg-white">
+    <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
       <div>
         <h1 class="mb-4 text-3xl font-bold">Home</h1>
-        <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto fuga quidem accusamus. Error ab quo atque quia deleniti dignissimos voluptate nostrum dolor, aut est quaerat natus veritatis quos unde quam provident neque illum in, vero eligendi. Ipsa ratione est doloremque veniam nesciunt, expedita dolores, nulla quaerat, quam illum blanditiis dignissimos! At, deserunt id omnis consequatur impedit repudiandae aut molestiae exercitationem!</p>
         <p class="text-gray-600">Welcome to our homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis velit. Integer in est sed urna auctor interdum non nec purus.</p>
       </div>
       <div>
-        <!-- Additional content here, like an image or another text block -->
-        <img src="dist/img/anbk.png" alt="Logo" class="w-full h-auto">
+        <img src="img/logo.png" alt="Logo" class="w-full h-auto">
       </div>
     </div>
   </section>
 
-  <!-- <section id="home" class="px-4 pt-20 bg-white">
-    <div class="mx-auto max-w-7xl">
-      <h1 class="mb-4 text-3xl font-bold">Home</h1>
-      <p class="text-gray-600">Welcome to our homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis velit. Integer in est sed urna auctor interdum non nec purus.</p>
-    </div>
-  </section> -->
-
-  <section id="about" class="px-4 pt-20 bg-white">
-    <div class="grid grid-cols-1 gap-8 mx-auto max-w-7xl md:grid-cols-2">
+  <section id="about" class="bg-white p-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="about-left">
-        <h2 class="mb-4 text-3xl font-bold">About Us</h2>
+        <h2 class="text-2xl font-bold mb-4">About Us</h2>
         <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis velit. Integer in est sed urna auctor interdum non nec purus. Cras scelerisque luctus arcu at ultrices. Sed ultricies, odio eget volutpat interdum, enim felis suscipit nisi, et elementum orci erat a erat.</p>
       </div>
       <div class="about-right">
-        <h2 class="mb-4 text-2xl font-bold">Our Mission</h2>
-        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis velit. Integer in est sed urna auctor interdum non nec purus. Cras scelerisque luctus arcu at ultrices. Sed ultricies, odio eget volutpat interdum, enim felis suscipit nisi, et elementum orci erat a erat.</p>
-      </div>
-      <div class="about-right">
-        <h2 class="mb-4 text-2xl font-bold">Our Goal</h2>
+        <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
         <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis velit. Integer in est sed urna auctor interdum non nec purus. Cras scelerisque luctus arcu at ultrices. Sed ultricies, odio eget volutpat interdum, enim felis suscipit nisi, et elementum orci erat a erat.</p>
       </div>
     </div>
   </section>
-  
-  <section id="services" class="px-4 pt-20">
-    <div class="mx-auto max-w-7xl">
-      <h2 class="mb-8 text-3xl font-bold text-center">Our Services</h2>
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 1</h3>
+
+  <section id="services" class="p-8">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 1</h3>
           <p class="text-gray-600">Description of service 1.</p>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 2</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 2</h3>
           <p class="text-gray-600">Description of service 2.</p>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 3</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 3</h3>
           <p class="text-gray-600">Description of service 3.</p>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 4</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 4</h3>
           <p class="text-gray-600">Description of service 4.</p>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 5</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 5</h3>
           <p class="text-gray-600">Description of service 5.</p>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 6</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 6</h3>
           <p class="text-gray-600">Description of service 6.</p>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 7</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 7</h3>
           <p class="text-gray-600">Description of service 7.</p>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-4 text-xl font-semibold">Service 8</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-4">Service 8</h3>
           <p class="text-gray-600">Description of service 8.</p>
         </div>
       </div>
     </div>
   </section>
-  
+
   <section id="contact" class="bg-gray-100 p-8">
+    <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="contact-left bg-white p-6 rounded-lg shadow-lg">
         <form action="https://formspree.io/f/mgegjqne" method="POST" class="space-y-4">
@@ -138,26 +126,11 @@
               <option value="PETANI">Petani</option>
               <option value="NELAYAN">Nelayan</option>
               <option value="PEDAGANG">Pedagang</option>
-              <option value="PELAJAR">Pelajar</option>
-              <option value="MAHASISWA">Mahasiswa</option>
-              <option value="GURU">Guru</option>
-              <option value="DOSEN">Dosen</option>
+              <option value="WIRAUSAHA">Wiraswasta</option>
               <option value="WIRASWASTA">Wiraswasta</option>
               <option value="TNI">TNI</option>
               <option value="POLRI">Polri</option>
               <option value="PNS">PNS</option>
-            </select>
-          </div>
-          <div>
-            <label for="pekerjaan" class="block text-sm font-medium text-gray-700">Pilih Jabatan:</label>
-            <select id="pekerjaan" name="pekerjaan" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-              <option value="">Jabatan </option>
-              <option value="Guru">Guru</option>
-              <option value="Rektor">Rektor</option>
-              <option value="Dosen">Dosen</option>
-              <option value="Kepala Sekolah">Kepala Sekolah</option>
-              <option value="Hakim">Hakim</option>
-              <option value="Jaksa">Jaksa</option>
             </select>
           </div>
           <div>
@@ -175,7 +148,6 @@
               <option value="S3">S3</option>
             </select>
           </div>
-
           <div>
             <label for="pesan" class="block text-sm font-medium text-gray-700">Pesan:</label>
             <textarea id="pesan" name="pesan" rows="4" placeholder="Masukkan pesan" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
@@ -185,7 +157,7 @@
           </div>
         </form>
       </div>
-      <div class="contact-right bg-white p-6 rounded-lg shadow-lg">
+      <div class="contact-right bg-white p-4 rounded-lg shadow-lg">
         <div class="space-y-8">
           <div class="contact-item">
             <div class="contact-item-icon flex items-center">
@@ -194,8 +166,11 @@
               </svg>
               <div class="contact-item-detail">
                 <h4 class="text-lg font-semibold text-gray-700">Address</h4>
-                <p class="text-gray-500">3424 Layman Avenue, Fayetteville, NC</p>
-                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63836.96659999438!2d127.80735046540863!3d-0.11407492050781395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d62857929e6ec05%3A0x43b111b86ed4cd75!2sBukit%20Indah%2C%20Kec.%20Gane%20Tim.%2C%20Kabupaten%20Halmahera%20Selatan%2C%20Maluku%20Utara!5e0!3m2!1sid!2sid!4v1718112883908!5m2!1sid!2sid"  width="100%;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full mx-0"></iframe></div>
+                <p class="text-gray-500">Dusun Bukit Indah, Desa Sumber Makmur Kec. Gane Timur</p>
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63836.9667903256!2d127.80735033862777!3d-0.11398908722370373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d62857929e6ec05%3A0x43b111b86ed4cd75!2sBukit%20Indah%2C%20Kec.%20Gane%20Tim.%2C%20Kabupaten%20Halmahera%20Selatan%2C%20Maluku%20Utara!5e0!3m2!1sid!2sid!4v1718473938681!5m2!1sid!2sid" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +179,6 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
               </svg>
-
               <div class="contact-item-detail">
                 <h4 class="text-lg font-semibold text-gray-700">Phone</h4>
                 <p class="text-gray-500">(501) 414-1541</p>
@@ -237,15 +211,15 @@
       </div>
     </div>
   </section>
-  
-  <footer class="p-8 text-white bg-gray-800">
-    <div class="grid grid-cols-1 gap-8 mx-auto max-w-7xl md:grid-cols-2 lg:grid-cols-4">
+
+  <footer class="bg-gray-800 text-white p-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div>
-        <h4 class="mb-4 text-lg font-semibold">About Us</h4>
+        <h4 class="text-lg font-semibold mb-4">About Us</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.</p>
       </div>
       <div>
-        <h4 class="mb-4 text-lg font-semibold">Services</h4>
+        <h4 class="text-lg font-semibold mb-4">Services</h4>
         <ul>
           <li><a href="#" class="hover:underline">Web Development</a></li>
           <li><a href="#" class="hover:underline">App Development</a></li>
@@ -254,7 +228,7 @@
         </ul>
       </div>
       <div>
-        <h4 class="mb-4 text-lg font-semibold">Contact Us</h4>
+        <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
         <ul>
           <li><a href="#" class="hover:underline">Email: info@example.com</a></li>
           <li><a href="#" class="hover:underline">Phone: (123) 456-7890</a></li>
@@ -262,7 +236,7 @@
         </ul>
       </div>
       <div>
-        <h4 class="mb-4 text-lg font-semibold">Follow Us</h4>
+        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
         <ul class="flex space-x-4">
           <li><a href="#" class="fa-brands fa-facebook-f hover:text-blue-500"></a></li>
           <li><a href="#" class="fa-brands fa-twitter hover:text-blue-500"></a></li>

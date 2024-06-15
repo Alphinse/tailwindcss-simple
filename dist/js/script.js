@@ -3,26 +3,18 @@
 @tailwind npm run components;
 @tailwind utilities;
 
-.menu-hidden {
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-}
-.menu-visible {
-  translateX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-@media (min-width: 768px) {
-  .menu-hidden, .menu-visible {
-    transform: none;
-    transition: none;
-  }
-}
-
-import { createApi } from 'unsplash-js';
-import nodeFetch from 'node-fetch';
-
-const unsplash = createApi({
-  accessKey: 'MY_ACCESS_KEY',
-  fetch: nodeFetch,
+. // script.js
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('click', function() {
+    mobileMenu.classList.toggle('menu-hidden');
+    mobileMenu.classList.toggle('menu-visible');
+  });
+  document.addEventListener('click', function(event) {
+    if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+      mobileMenu.classList.add('menu-hidden');
+      mobileMenu.classList.remove('menu-visible');
+    }
+  });
 });
