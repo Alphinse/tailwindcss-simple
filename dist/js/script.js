@@ -8,7 +8,7 @@
   transition: transform 0.3s ease-in-out;
 }
 .menu-visible {
-  transform: translateX(0);
+  translateX(0);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -19,3 +19,10 @@
   }
 }
 
+import { createApi } from 'unsplash-js';
+import nodeFetch from 'node-fetch';
+
+const unsplash = createApi({
+  accessKey: 'MY_ACCESS_KEY',
+  fetch: nodeFetch,
+});

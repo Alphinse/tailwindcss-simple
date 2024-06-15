@@ -1,6 +1,6 @@
 /* src/input.css */
 @tailwind base;
-@tailwind npm run components;
+@tailwind base;
 @tailwind utilities;
 
 .menu-hidden {
@@ -17,8 +17,4 @@
     transform: none;
     transition: none;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
