@@ -1,18 +1,21 @@
-{/* <script> */}
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-  
-  menuToggle.addEventListener('click', function() {
-    mobileMenu.classList.toggle('menu-hidden');
-    mobileMenu.classList.toggle('menu-visible');
-  });
+/* src/input.css */
+@tailwind base;
+@tailwind npm run components;
+@tailwind utilities;
 
-  document.addEventListener('click', function(event) {
-    if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-      mobileMenu.classList.add('menu-hidden');
-      mobileMenu.classList.remove('menu-visible');
-    }
-  });
-});
-// </script>
+.menu-hidden {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.menu-visible {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .menu-hidden, .menu-visible {
+    transform: none;
+    transition: none;
+  }
+}
+

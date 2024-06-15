@@ -18,3 +18,7 @@
     transition: none;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
